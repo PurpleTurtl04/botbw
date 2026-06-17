@@ -1,27 +1,48 @@
 @import 'tailwindcss';
-@plugin 'daisyui';
+@plugin 'daisyui' {
+    themes: botbw-theme --default;
+}
 
-:root {
-    --background: #ffffff;
-    --foreground: #171717;
+@plugin 'daisyui/theme' {
+    name: 'botbw';
+    default: true;
+    prefersdark: false;
+    color-scheme: 'dark';
+    --color-base-100: #0f172a;
+    --color-base-200: oklch(19.314% 0.037 265.754);
+    --color-base-300: #0a1120;
+    --color-base-content: #fcfaf4;
+    --color-primary: #e86100;
+    --color-primary-content: oklch(17.86% 0.034 265.754);
+    --color-secondary: #fcfaf4;
+    --color-secondary-content: #0b2341;
+    --color-accent: #0093d2;
+    --color-accent-content: oklch(17.86% 0.034 265.754);
+    --color-neutral: #1e293b;
+    --color-neutral-content: #fcfaf4;
+    --color-info: #00d9ff;
+    --color-info-content: oklch(17.86% 0.034 265.754);
+    --color-success: #00a844;
+    --color-success-content: oklch(17.86% 0.034 265.754);
+    --color-warning: #ffc044;
+    --color-warning-content: oklch(17.86% 0.034 265.754);
+    --color-error: #e4524a;
+    --color-error-content: oklch(17.86% 0.034 265.754);
+    --radius-selector: 0.25rem;
+    --radius-field: 0.25rem;
+    --radius-box: 0.25rem;
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+    --border: 1px;
+    --depth: 0;
+    --noise: 0;
 }
 
 @theme inline {
-    --color-background: var(--background);
-    --color-foreground: var(--foreground);
-    --font-sans: var(--font-geist-sans);
-    --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
-}
-
-body {
-    background: var(--background);
-    color: var(--foreground);
-    font-family: Arial, Helvetica, sans-serif;
+    /* Fonts */
+    --font-pressStart: var(--font-press-start);
+    --font-plexMono: var(--font-plex-mono);
+    /* Breakpoints */
+    --breakpoint-xs: 30rem;
+    --breakpoint-3xl: 121rem; /* 120rem is 1920px */
 }

@@ -1,13 +1,15 @@
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Press_Start_2P, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
+const pressStart = Press_Start_2P({
+    variable: '--font-press-start',
+    weight: ['400'],
     subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
+const plexMono = IBM_Plex_Mono({
+    variable: '--font-plex-mono',
+    weight: ['100', '200', '300', '400', '500', '600', '700'],
     subsets: ['latin'],
 });
 
@@ -20,9 +22,11 @@ export default function RootLayout({ children }) {
     return (
         <html
             lang='en'
-            className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+            className={`${pressStart.variable} ${plexMono.variable} h-full antialiased`}
         >
-            <body className='flex min-h-full flex-col'>{children}</body>
+            <body className='font-plexMono bg-base-200 flex min-h-full flex-col'>
+                {children}
+            </body>
         </html>
     );
 }
