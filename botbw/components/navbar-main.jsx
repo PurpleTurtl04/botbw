@@ -13,7 +13,7 @@ export default function NavbarMain() {
         <div className='bg-primary flex justify-center shadow-sm'>
             <nav className='3xl:px-2 container'>
                 <div className='navbar'>
-                    <div className='navbar-start'>
+                    <div className='navbar-start w-2/5 lg:w-1/2'>
                         <div className='dropdown'>
                             <div
                                 tabIndex='0'
@@ -36,27 +36,33 @@ export default function NavbarMain() {
                             </div>
                             <ul
                                 tabIndex='-1'
-                                className='menu menu-sm dropdown-content bg-base-300 rounded-box text-base-content z-1 mt-3 w-32 p-2 shadow'
+                                className='menu menu-sm dropdown-content bg-secondary rounded-box text-primary-content z-1 mt-3 w-32 p-2 shadow'
                             >
                                 <li>
                                     <Link
-                                        href='/daily-tails'
+                                        href='/weekly-picks'
                                         onClick={closeNavMenu}
+                                        className='hover:bg-neutral/15'
                                     >
-                                        Daily Tails
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href='/zoo' onClick={closeNavMenu}>
-                                        The Zoo
+                                        Weekly Picks
                                     </Link>
                                 </li>
                                 <li>
                                     <Link
-                                        href='/keepers'
+                                        href='/leaderboard'
                                         onClick={closeNavMenu}
+                                        className='hover:bg-neutral/15'
                                     >
-                                        The Keepers
+                                        Leaderboard
+                                    </Link>
+                                </li>
+                                <li>
+                                    <Link
+                                        href='/admin'
+                                        onClick={closeNavMenu}
+                                        className='hover:bg-neutral/15'
+                                    >
+                                        Admin
                                     </Link>
                                 </li>
                                 <li>
@@ -66,7 +72,7 @@ export default function NavbarMain() {
                                         className='btn btn-xs btn-soft btn-primary md:pl-0'
                                         onClick={closeNavMenu}
                                     >
-                                        Sign Up
+                                        Log In
                                     </Link>
                                 </li>
                             </ul>
@@ -88,7 +94,7 @@ export default function NavbarMain() {
                         </Link>
                     </div>
                     <div className='navbar-end hidden md:flex'>
-                        <ul className='menu menu-horizontal px-1 lg:gap-2'>
+                        <ul className='menu menu-horizontal flex-nowrap px-1 lg:gap-2'>
                             <li>
                                 <Link
                                     href='/weekly-picks'

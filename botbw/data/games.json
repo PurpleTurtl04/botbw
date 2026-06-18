@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "homeTeam": "Miss St",
+        "homeScore": "19",
+        "awayTeam": "Ole Miss",
+        "awayScore": "38",
+        "favorite": "Ole Miss",
+        "spread": "7.5"
+    },
+    {
+        "id": 2,
+        "homeTeam": "GA Tech",
+        "homeScore": "",
+        "awayTeam": "",
+        "awayScore": "",
+        "favorite": "",
+        "spread": ""
+    },
+    {
+        "id": 3,
+        "homeTeam": "",
+        "homeScore": "",
+        "awayTeam": "",
+        "awayScore": "",
+        "favorite": "",
+        "spread": ""
+    },
+    {
+        "id": 4,
+        "homeTeam": "",
+        "homeScore": "",
+        "awayTeam": "",
+        "awayScore": "",
+        "favorite": "",
+        "spread": ""
+    },
+    {
+        "id": 5,
+        "homeTeam": "",
+        "homeScore": "",
+        "awayTeam": "",
+        "awayScore": "",
+        "favorite": "",
+        "spread": ""
+    },
+    {
+        "id": 6,
+        "homeTeam": "",
+        "homeScore": "",
+        "awayTeam": "",
+        "awayScore": "",
+        "favorite": "",
+        "spread": ""
+    }
+]
