@@ -1,7 +1,7 @@
 export default function PlayerSelect() {
     return (
         <div>
-            <select className='select font-pressStart lg:select-lg select-primary text-primary min-h-14 min-w-68 border-3 border-dashed'>
+            <select className='select font-pressStart lg:select-lg select-primary text-primary min-h-13 min-w-68 border-3 border-dashed'>
                 <option>Andrew</option>
                 <option>Dryden</option>
                 <option>Kurtis</option>

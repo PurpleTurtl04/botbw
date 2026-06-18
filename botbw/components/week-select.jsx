@@ -1,7 +1,7 @@
 export default function WeekSelect() {
     return (
         <div>
-            <select className='select font-pressStart lg:select-lg select-primary text-primary min-h-14 min-w-68 border-3'>
+            <select className='select font-pressStart lg:select-lg select-primary text-primary min-h-13 min-w-68 border-3'>
                 <option>Week 1</option>
                 <option>Week 2</option>
                 <option>Week 3</option>
