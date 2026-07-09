@@ -11,46 +11,46 @@
     {
         "id": 2,
         "homeTeam": "GA Tech",
-        "homeScore": "",
-        "awayTeam": "",
-        "awayScore": "",
-        "favorite": "",
-        "spread": ""
+        "homeScore": "9",
+        "awayTeam": "Georgia",
+        "awayScore": "16",
+        "favorite": "Georgia",
+        "spread": "7.5"
     },
     {
         "id": 3,
-        "homeTeam": "",
-        "homeScore": "",
-        "awayTeam": "",
-        "awayScore": "",
-        "favorite": "",
-        "spread": ""
+        "homeTeam": "Texas",
+        "homeScore": "27",
+        "awayTeam": "Texas A&M",
+        "awayScore": "17",
+        "favorite": "Texas A&M",
+        "spread": "2.5"
     },
     {
         "id": 4,
-        "homeTeam": "",
-        "homeScore": "",
-        "awayTeam": "",
-        "awayScore": "",
-        "favorite": "",
-        "spread": ""
+        "homeTeam": "Michigan",
+        "homeScore": "9",
+        "awayTeam": "Ohio State",
+        "awayScore": "27",
+        "favorite": "Ohio State",
+        "spread": "9.5"
     },
     {
         "id": 5,
-        "homeTeam": "",
-        "homeScore": "",
-        "awayTeam": "",
-        "awayScore": "",
-        "favorite": "",
-        "spread": ""
+        "homeTeam": "Pittsburgh",
+        "homeScore": "7",
+        "awayTeam": "Miami",
+        "awayScore": "38",
+        "favorite": "Miami",
+        "spread": "6.5"
     },
     {
         "id": 6,
-        "homeTeam": "",
-        "homeScore": "",
-        "awayTeam": "",
-        "awayScore": "",
-        "favorite": "",
-        "spread": ""
+        "homeTeam": "Louisville",
+        "homeScore": "41",
+        "awayTeam": "Kentucky",
+        "awayScore": "0",
+        "favorite": "Louisville",
+        "spread": "2.5"
     }
 ]
