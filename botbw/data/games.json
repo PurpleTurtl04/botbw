@@ -1,56 +1,74 @@
 [
     {
         "id": 1,
-        "homeTeam": "Miss St",
-        "homeScore": "19",
         "awayTeam": "Ole Miss",
-        "awayScore": "38",
+        "awayScore": 38,
+        "homeTeam": "Miss St",
+        "homeScore": 19,
         "favorite": "Ole Miss",
-        "spread": "7.5"
+        "spread": 7.5,
+        "isCompletedFlg": 0,
+        "isCorrectFlg": null,
+        "playerPick": "Ole Miss"
     },
     {
         "id": 2,
-        "homeTeam": "GA Tech",
-        "homeScore": "9",
         "awayTeam": "Georgia",
-        "awayScore": "16",
+        "awayScore": 16,
+        "homeTeam": "GA Tech",
+        "homeScore": 9,
         "favorite": "Georgia",
-        "spread": "7.5"
+        "spread": 7.5,
+        "isCompletedFlg": 1,
+        "isCorrectFlg": 0,
+        "playerPick": "Georgia"
     },
     {
         "id": 3,
-        "homeTeam": "Texas",
-        "homeScore": "27",
         "awayTeam": "Texas A&M",
-        "awayScore": "17",
+        "awayScore": 17,
+        "homeTeam": "Texas",
+        "homeScore": 27,
         "favorite": "Texas A&M",
-        "spread": "2.5"
+        "spread": 2.5,
+        "isCompletedFlg": 0,
+        "isCorrectFlg": null,
+        "playerPick": null
     },
     {
         "id": 4,
-        "homeTeam": "Michigan",
-        "homeScore": "9",
         "awayTeam": "Ohio State",
-        "awayScore": "27",
+        "awayScore": 27,
+        "homeTeam": "Michigan",
+        "homeScore": 9,
         "favorite": "Ohio State",
-        "spread": "9.5"
+        "spread": 9.5,
+        "isCompletedFlg": 0,
+        "isCorrectFlg": null,
+        "playerPick": "Ohio State"
     },
     {
         "id": 5,
-        "homeTeam": "Pittsburgh",
-        "homeScore": "7",
         "awayTeam": "Miami",
-        "awayScore": "38",
+        "awayScore": 38,
+        "homeTeam": "Pittsburgh",
+        "homeScore": 7,
         "favorite": "Miami",
-        "spread": "6.5"
+        "spread": 6.5,
+        "isCompletedFlg": 1,
+        "isCorrectFlg": 1,
+        "playerPick": "Miami"
     },
     {
         "id": 6,
-        "homeTeam": "Louisville",
-        "homeScore": "41",
         "awayTeam": "Kentucky",
-        "awayScore": "0",
+        "awayScore": 0,
+        "homeTeam": "Louisville",
+        "homeScore": 41,
         "favorite": "Louisville",
-        "spread": "2.5"
+        "spread": 2.5,
+        "isCompletedFlg": 1,
+        "isCorrectFlg": 1,
+        "playerPick": "Louisville"
     }
 ]

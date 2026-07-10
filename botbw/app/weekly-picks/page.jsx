@@ -1,5 +1,8 @@
 import PlayerSelect from '@/components/player-select';
 import WeekSelect from '@/components/week-select';
+import Game from '@/app/weekly-picks/game';
+
+import games from '@/data/games.json';
 
 export default function WeeklyPicks() {
     return (
@@ -10,100 +13,9 @@ export default function WeeklyPicks() {
                 <PlayerSelect />
             </div>
             <div className='mt-10 grid gap-6 text-xs lg:mt-12 lg:grid-cols-2'>
-                <div className='flex justify-center lg:justify-end'>
-                    <div className='border-primary min-w-140 border-5'>
-                        <div className='border-secondary flex flex-col gap-4 border-3 p-4'>
-                            <div className='grid grid-cols-4'>
-                                <div className='col-span-2'></div>
-                                <div className='col-span-1 text-center underline'>
-                                    Pick %
-                                </div>
-                                <div className='col-span-1 text-center underline'>
-                                    Score
-                                </div>
-                            </div>
-                            <div className='grid grid-cols-4'>
-                                <div className='col-span-2'>
-                                    <div className='flex items-center gap-2'>
-                                        <input
-                                            type='radio'
-                                            name='radio-4'
-                                            className='radio radio-sm radio-primary'
-                                        />
-                                        <p>Ole Miss</p>
-                                    </div>
-                                </div>
-                                <div className='col-span-1 text-center'>
-                                    75%
-                                </div>
-                                <div className='col-span-1 text-center'>38</div>
-                            </div>
-                            <div className='grid grid-cols-4'>
-                                <div className='col-span-2'>
-                                    <div className='flex items-center gap-2'>
-                                        <input
-                                            type='radio'
-                                            name='radio-4'
-                                            className='radio radio-sm radio-primary'
-                                        />
-                                        <p>Miss St(-7.5)</p>
-                                    </div>
-                                </div>
-                                <div className='col-span-1 text-center'>
-                                    25%
-                                </div>
-                                <div className='col-span-1 text-center'>19</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className='flex justify-center lg:justify-start'>
-                    <div className='border-primary min-w-140 border-5'>
-                        <div className='border-secondary flex flex-col gap-4 border-3 p-4'>
-                            <div className='grid grid-cols-4'>
-                                <div className='col-span-2'></div>
-                                <div className='col-span-1 text-center underline'>
-                                    Pick %
-                                </div>
-                                <div className='col-span-1 text-center underline'>
-                                    Score
-                                </div>
-                            </div>
-                            <div className='grid grid-cols-4'>
-                                <div className='col-span-2'>
-                                    <div className='flex items-center gap-2'>
-                                        <input
-                                            type='radio'
-                                            name='radio-4'
-                                            className='radio radio-sm radio-primary'
-                                        />
-                                        <p>Ole Miss</p>
-                                    </div>
-                                </div>
-                                <div className='col-span-1 text-center'>
-                                    75%
-                                </div>
-                                <div className='col-span-1 text-center'>38</div>
-                            </div>
-                            <div className='grid grid-cols-4'>
-                                <div className='col-span-2'>
-                                    <div className='flex items-center gap-2'>
-                                        <input
-                                            type='radio'
-                                            name='radio-4'
-                                            className='radio radio-sm radio-primary'
-                                        />
-                                        <p>Miss St(-7.5)</p>
-                                    </div>
-                                </div>
-                                <div className='col-span-1 text-center'>
-                                    25%
-                                </div>
-                                <div className='col-span-1 text-center'>19</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {games.map((game) => (
+                    <Game key={game.id} {...game} />
+                ))}
             </div>
         </div>
     );
