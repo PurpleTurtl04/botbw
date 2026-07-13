@@ -1,7 +1,7 @@
 import { Press_Start_2P, IBM_Plex_Mono } from 'next/font/google';
 import './globals.css';
-import NavbarMain from '@/components/navbar-main';
-import Footer from '@/components/footer';
+import Navbar from '@/components/navbar/navbar';
+import Footer from '@/components/footer/footer';
 
 const pressStart = Press_Start_2P({
     variable: '--font-press-start',
@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
             className={`${pressStart.variable} ${plexMono.variable} h-full antialiased`}
         >
             <body className='font-plexMono bg-base-200 text-base-content flex min-h-full flex-col'>
-                <NavbarMain />
+                <Navbar />
                 <main className='container mx-auto grow px-4 py-6'>
                     {children}
                 </main>

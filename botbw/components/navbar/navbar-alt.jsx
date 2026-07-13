@@ -1,16 +1,15 @@
-'use client';
 import Link from 'next/link';
 
 import football from '@/public/images/8bitFootball.png';
 import Image from 'next/image';
 
-export default function NavbarMain() {
+export default function NavbarAlt() {
     function closeNavMenu() {
         document.activeElement.blur();
     }
 
     return (
-        <div className='bg-primary flex justify-center shadow-sm'>
+        <div className='bg-base-200 z-10 flex justify-center shadow-sm'>
             <nav className='3xl:px-2 container'>
                 <div className='navbar'>
                     <div className='navbar-start w-2/5 lg:w-1/2'>
@@ -18,7 +17,7 @@ export default function NavbarMain() {
                             <div
                                 tabIndex='0'
                                 role='button'
-                                className='btn btn-ghost btn-square md:hidden'
+                                className='btn hover:bg-primary btn-square md:hidden'
                             >
                                 <svg
                                     xmlns='http://www.w3.org/2000/svg'
@@ -88,13 +87,13 @@ export default function NavbarMain() {
                                     className='h-auto w-full'
                                 />
                             </div>
-                            <span className='font-pressStart text-primary-content text-shadow-base-content text-2xl text-shadow-[1px_2px_0_#000] md:pl-0'>
+                            <span className='font-pressStart text-base-content text-shadow-primary text-2xl text-shadow-[1px_2px_0_#000] md:pl-0'>
                                 BOTBW
                             </span>
                         </Link>
                     </div>
                     <div className='navbar-end hidden md:flex'>
-                        <ul className='menu menu-horizontal flex-nowrap px-1 lg:gap-2'>
+                        <ul className='menu menu-horizontal flex-nowrap items-center gap-2 px-1 text-[16px]'>
                             <li>
                                 <Link
                                     href='/weekly-picks'
@@ -123,7 +122,7 @@ export default function NavbarMain() {
                                 <Link
                                     href='?modal=open'
                                     scroll={false}
-                                    className='btn btn-sm bg-base-100 font-pressStart hover:bg-base-content hover:text-primary-content font-light'
+                                    className='btn btn-sm bg-primary text-base-200 font-pressStart hover:bg-base-content hover:text-primary-content font-light'
                                 >
                                     Log In
                                 </Link>
