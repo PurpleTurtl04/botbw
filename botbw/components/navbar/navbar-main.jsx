@@ -88,7 +88,7 @@ export default function NavbarMain() {
                                 />
                             </div>
                             <span className='font-pressStart text-primary-content text-shadow-base-content text-2xl text-shadow-[1px_2px_0_#000] md:pl-0'>
-                                BOTBW
+                                BOTB
                             </span>
                         </Link>
                     </div>
