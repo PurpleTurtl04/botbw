@@ -7,9 +7,7 @@
         "homeScore": 19,
         "favorite": "Ole Miss",
         "spread": 7.5,
-        "isFinalFlg": false,
-        "isCorrectFlg": null,
-        "playerPick": "Ole Miss"
+        "isFinalFlg": true
     },
     {
         "id": 2,
@@ -19,9 +17,7 @@
         "homeScore": 9,
         "favorite": "Georgia",
         "spread": 7.5,
-        "isFinalFlg": true,
-        "isCorrectFlg": 0,
-        "playerPick": "Georgia"
+        "isFinalFlg": false
     },
     {
         "id": 3,
@@ -31,9 +27,7 @@
         "homeScore": 27,
         "favorite": "Texas A&M",
         "spread": 2.5,
-        "isFinalFlg": false,
-        "isCorrectFlg": null,
-        "playerPick": null
+        "isFinalFlg": true
     },
     {
         "id": 4,
@@ -43,9 +37,7 @@
         "homeScore": 9,
         "favorite": "Ohio State",
         "spread": 9.5,
-        "isFinalFlg": false,
-        "isCorrectFlg": null,
-        "playerPick": "Ohio State"
+        "isFinalFlg": true
     },
     {
         "id": 5,
@@ -55,9 +47,7 @@
         "homeScore": 7,
         "favorite": "Miami",
         "spread": 6.5,
-        "isFinalFlg": true,
-        "isCorrectFlg": 1,
-        "playerPick": "Miami"
+        "isFinalFlg": false
     },
     {
         "id": 6,
@@ -67,8 +57,46 @@
         "homeScore": 41,
         "favorite": "Louisville",
         "spread": 2.5,
-        "isFinalFlg": true,
-        "isCorrectFlg": 1,
-        "playerPick": "Louisville"
+        "isFinalFlg": true
+    },
+    {
+        "id": 7,
+        "awayTeam": "",
+        "awayScore": 0,
+        "homeTeam": "",
+        "homeScore": 0,
+        "favorite": "",
+        "spread": 0,
+        "isFinalFlg": false
+    },
+    {
+        "id": 8,
+        "awayTeam": "",
+        "awayScore": 0,
+        "homeTeam": "",
+        "homeScore": 0,
+        "favorite": "",
+        "spread": 0,
+        "isFinalFlg": false
+    },
+    {
+        "id": 9,
+        "awayTeam": "",
+        "awayScore": 0,
+        "homeTeam": "",
+        "homeScore": 0,
+        "favorite": "",
+        "spread": 0,
+        "isFinalFlg": false
+    },
+    {
+        "id": 10,
+        "awayTeam": "",
+        "awayScore": 0,
+        "homeTeam": "",
+        "homeScore": 0,
+        "favorite": "",
+        "spread": 0,
+        "isFinalFlg": false
     }
 ]

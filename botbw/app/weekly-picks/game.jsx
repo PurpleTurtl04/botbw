@@ -10,7 +10,7 @@ export default function Game({
     homeScore,
     favorite,
     spread,
-    isCompletedFlg,
+    isFinalFlg,
     isCorrectFlg,
     playerPick,
 }) {
@@ -21,7 +21,7 @@ export default function Game({
     let innerBorder = 'border-secondary';
     let radioColor = 'radio-primary';
 
-    if (isCompletedFlg) {
+    if (isFinalFlg) {
         outerBorder = 'border-secondary';
         innerBorder = 'border-neutral';
         radioColor = 'radio-secondary';
@@ -61,7 +61,7 @@ export default function Game({
                                     onChange={(e) =>
                                         setPlayerSelection(e.target.value)
                                     }
-                                    disabled={isCompletedFlg}
+                                    disabled={isFinalFlg}
                                 />
                                 <label htmlFor={`away-team${id}`}>
                                     {awayTeam}
@@ -89,7 +89,7 @@ export default function Game({
                                     onChange={(e) =>
                                         setPlayerSelection(e.target.value)
                                     }
-                                    disabled={isCompletedFlg}
+                                    disabled={isFinalFlg}
                                 />
                                 <label htmlFor={`home-team${id}`}>
                                     {homeTeam}
