@@ -6,8 +6,10 @@ export default function Game({
     id,
     awayTeam,
     awayScore,
+    awayPick,
     homeTeam,
     homeScore,
+    homePick,
     favorite,
     spread,
     isFinalFlg,
@@ -71,7 +73,9 @@ export default function Game({
                                 </label>
                             </div>
                         </div>
-                        <div className='col-span-1 text-center'>25%</div>
+                        <div className='col-span-1 text-center'>
+                            {awayPick}%
+                        </div>
                         <div className='col-span-1 text-center'>
                             {awayScore}
                         </div>
@@ -99,7 +103,9 @@ export default function Game({
                                 </label>
                             </div>
                         </div>
-                        <div className='col-span-1 text-center'>75%</div>
+                        <div className='col-span-1 text-center'>
+                            {homePick}%
+                        </div>
                         <div className='col-span-1 text-center'>
                             {homeScore}
                         </div>
