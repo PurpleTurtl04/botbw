@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "place": 1,
+        "name": "Mark",
+        "weeklyPoints": 5,
+        "weeklyPickPercentage": 50,
+        "seasonPoints": 80,
+        "seasonPickPercentage": 57
+    },
+    {
+        "id": 2,
+        "place": 2,
+        "name": "Mike",
+        "weeklyPoints": 7,
+        "weeklyPickPercentage": 70,
+        "seasonPoints": 78,
+        "seasonPickPercentage": 56
+    },
+    {
+        "id": 3,
+        "place": 3,
+        "name": "Nick",
+        "weeklyPoints": 6,
+        "weeklyPickPercentage": 60,
+        "seasonPoints": 72,
+        "seasonPickPercentage": 51
+    },
+    {
+        "id": 4,
+        "place": 4,
+        "name": "Kurtis",
+        "weeklyPoints": 5,
+        "weeklyPickPercentage": 50,
+        "seasonPoints": 69,
+        "seasonPickPercentage": 49
+    },
+    {
+        "id": 5,
+        "place": 4,
+        "name": "Patrick",
+        "weeklyPoints": 5,
+        "weeklyPickPercentage": 50,
+        "seasonPoints": 69,
+        "seasonPickPercentage": 49
+    },
+    {
+        "id": 6,
+        "place": 6,
+        "name": "Dryden",
+        "weeklyPoints": 5,
+        "weeklyPickPercentage": 50,
+        "seasonPoints": 68,
+        "seasonPickPercentage": 49
+    },
+    {
+        "id": 7,
+        "place": 6,
+        "name": "Tyler",
+        "weeklyPoints": 6,
+        "weeklyPickPercentage": 60,
+        "seasonPoints": 68,
+        "seasonPickPercentage": 49
+    },
+    {
+        "id": 8,
+        "place": 8,
+        "name": "Jason",
+        "weeklyPoints": 4,
+        "weeklyPickPercentage": 40,
+        "seasonPoints": 65,
+        "seasonPickPercentage": 46
+    },
+    {
+        "id": 9,
+        "place": 9,
+        "name": "Andrew",
+        "weeklyPoints": 5,
+        "weeklyPickPercentage": 50,
+        "seasonPoints": 62,
+        "seasonPickPercentage": 44
+    }
+]

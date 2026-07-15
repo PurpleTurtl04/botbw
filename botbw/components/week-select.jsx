@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 export default function WeekSelect() {
-    const [selectedWeek, setSelectedWeek] = useState('1');
+    const [selectedWeek, setSelectedWeek] = useState('14');
 
     // Generate an array from 1 to 14
     const weeks = Array.from({ length: 14 }, (_, i) => i + 1);
