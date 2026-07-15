@@ -34,92 +34,83 @@ export default function AdminGame({
         <tr key={id}>
             <td className='text-center'>{id}</td>
             <td>
-                <label htmlFor={`away-team-game-${id}`} className='sr-only'>
-                    Away Team Game ${id}
+                <label className='input input-secondary'>
+                    <span className='sr-only'>Away Team Game ${id}</span>
+                    <input
+                        type='text'
+                        placeholder={`Away Team G${id}...`}
+                        value={awayTeamName}
+                        onChange={handleAwayTeamName}
+                    />
                 </label>
-                <input
-                    type='text'
-                    id={`away-team-game-${id}`}
-                    placeholder={`Away Team G${id}...`}
-                    className='input input-secondary'
-                    value={awayTeamName}
-                    onChange={handleAwayTeamName}
-                />
             </td>
             <td>
-                <label
-                    htmlFor={`away-team-score-game-${id}`}
-                    className='sr-only'
-                >
-                    Away Team Score Game ${id}
+                <label className='input input-secondary border-dashed'>
+                    <span className='sr-only'>Away Team Score Game ${id}</span>
+                    <input
+                        type='number'
+                        min='0'
+                        className='[appearance:textfield] text-center [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none'
+                        value={awayTeamScore}
+                        onChange={(e) =>
+                            setAwayTeamScore(Number(e.target.value))
+                        }
+                    />
                 </label>
-                <input
-                    type='text'
-                    id={`away-team-score-game-${id}`}
-                    placeholder='Secondary'
-                    className='input input-secondary border-dashed text-center'
-                    value={awayTeamScore}
-                    onChange={(e) => setAwayTeamScore(Number(e.target.value))}
-                />
             </td>
             <td>
-                <label htmlFor={`home-team-game-${id}`} className='sr-only'>
-                    Home Team Game ${id}
+                <label className='input input-secondary'>
+                    <span className='sr-only'>Home Team Game ${id}</span>
+                    <input
+                        type='text'
+                        placeholder={`Home Team G${id}...`}
+                        value={homeTeamName}
+                        onChange={handleHomeTeamName}
+                    />
                 </label>
-                <input
-                    type='text'
-                    id={`home-team-game-${id}`}
-                    placeholder={`Home Team G${id}...`}
-                    className='input input-secondary'
-                    value={homeTeamName}
-                    onChange={handleHomeTeamName}
-                />
             </td>
             <td>
-                <label
-                    htmlFor={`home-team-score-game-${id}`}
-                    className='sr-only'
-                >
-                    Home Team Score Game ${id}
+                <label className='input input-secondary border-dashed'>
+                    <span className='sr-only'>Home Team Score Game ${id}</span>
+                    <input
+                        type='number'
+                        min='0'
+                        className='[appearance:textfield] text-center [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none'
+                        value={homeTeamScore}
+                        onChange={(e) =>
+                            setHomeTeamScore(Number(e.target.value))
+                        }
+                    />
                 </label>
-                <input
-                    type='text'
-                    id={`home-team-score-game-${id}`}
-                    placeholder='Secondary'
-                    className='input input-secondary border-dashed text-center'
-                    value={homeTeamScore}
-                    onChange={(e) => setHomeTeamScore(Number(e.target.value))}
-                />
             </td>
             <td>
-                <label htmlFor={`favorite-game-${id}`} className='sr-only'>
-                    Game ${id} Favorite
+                <label>
+                    <span className='sr-only'>Game ${id} Favorite Select</span>
+                    <select
+                        className='select select-primary'
+                        value={selectFavorite}
+                        onChange={(e) => setSelectFavorite(e.target.value)}
+                    >
+                        <option value='' disabled>
+                            Pick a team
+                        </option>
+                        <option value={awayTeamName}>{awayTeamName}</option>
+                        <option value={homeTeamName}>{homeTeamName}</option>
+                    </select>
                 </label>
-                <select
-                    className='select select-primary'
-                    id={`favorite-game-${id}`}
-                    value={selectFavorite}
-                    onChange={(e) => setSelectFavorite(e.target.value)}
-                >
-                    <option value='' disabled={true}>
-                        Pick a team
-                    </option>
-                    <option value={awayTeamName}>{awayTeamName}</option>
-                    <option value={homeTeamName}>{homeTeamName}</option>
-                </select>
             </td>
             <td>
-                <label htmlFor={`spread-game-${id}`} className='sr-only'>
-                    Game ${id} Spread
+                <label className='input input-secondary border-dashed'>
+                    <span className='sr-only'>Game ${id} Spread</span>
+                    <input
+                        type='number'
+                        min='0'
+                        step='0.5'
+                        className='[appearance:textfield] text-center [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none'
+                        value={gameSpread}
+                        onChange={(e) => setGameSpread(Number(e.target.value))}
+                    />
                 </label>
-                <input
-                    type='text'
-                    id={`spread-game-${id}`}
-                    placeholder='Secondary'
-                    className='input input-secondary border-dashed text-center'
-                    value={gameSpread}
-                    onChange={(e) => setGameSpread(Number(e.target.value))}
-                />
             </td>
             <td className='text-center'>
                 <label htmlFor={`final-flag-game-${id}`} className='sr-only'>
