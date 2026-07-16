@@ -150,7 +150,7 @@ export default function LeaderboardTable() {
                             {row.getVisibleCells().map((cell) => (
                                 <td
                                     key={cell.id}
-                                    className='border-primary border-b'
+                                    className='border-primary border-b text-base'
                                 >
                                     {flexRender(
                                         cell.column.columnDef.cell,
