@@ -4,6 +4,11 @@ import Game from '@/app/weekly-picks/game';
 
 import games from '@/data/games.json';
 
+export const metadata = {
+    title: 'Weekly Picks',
+    description: 'Make your picks for the week and see your results.',
+};
+
 export default function WeeklyPicks() {
     return (
         <div className='font-pressStart container mx-auto'>

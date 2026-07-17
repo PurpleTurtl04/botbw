@@ -2,6 +2,7 @@ import Hero from '@/components/hero';
 
 export const metadata = {
     title: 'Battle of the Benchwarmers',
+    description: 'A simple and fun college football pickem application.',
     // Inject style tag to lock overflow for this route only
     other: {
         style: 'html, body { height: 100vh; overflow: hidden; }',

@@ -1,6 +1,12 @@
 import WeekSelect from '@/components/week-select';
 import LeaderboardTable from './leaderboard-table';
 
+export const metadata = {
+    title: 'Leaderboard',
+    description:
+        'Review the leaderboard to see points and pick rates for yourself and other players.',
+};
+
 export default function Leaderboard() {
     return (
         <div className='container mx-auto'>
