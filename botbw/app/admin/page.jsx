@@ -4,7 +4,7 @@ import AdminGame from '@/app/admin/admin-game';
 import adminGames from '@/data/admin.json';
 
 export const metadata = {
-    title: 'Admin Weekly Picks',
+    title: 'BOTB - Admin Weekly Picks',
     description:
         'As an administrator you can select the games for the week and update scores upon a game concluding.',
 };

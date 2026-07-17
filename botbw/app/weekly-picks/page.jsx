@@ -5,7 +5,7 @@ import Game from '@/app/weekly-picks/game';
 import games from '@/data/games.json';
 
 export const metadata = {
-    title: 'Weekly Picks',
+    title: 'BOTB - Weekly Picks',
     description: 'Make your picks for the week and see your results.',
 };
 

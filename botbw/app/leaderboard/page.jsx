@@ -2,7 +2,7 @@ import WeekSelect from '@/components/week-select';
 import LeaderboardTable from './leaderboard-table';
 
 export const metadata = {
-    title: 'Leaderboard',
+    title: 'BOTB - Leaderboard',
     description:
         'Review the leaderboard to see points and pick rates for yourself and other players.',
 };
